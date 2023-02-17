@@ -29,11 +29,23 @@
   * Even the biggest organizations have limited resources and various targets.
 * One of the best things that we can do is to choose public algorithms that has resisted to enough public test and cryptanalysis.
 * All the algorithms that have to be exported outside the United States must be approved by the NSA.
- * The NSA is able to break all the exported-approved algorithm. However, it is not an official source!! This rumour comes from the private suggests made by the NSA to the private companies. The suggests can include: leaking a key bit once in a while, use a fixed IV; or encrypt a fixed header; generate randomly few bytes, encrypt them and add the both at the beginning of the message.
- * The NSA keeps a copy of the source-code of each export-approved algorithm. So, BEWARE of encryption algorithms from the U.S.
+  * The NSA is able to break all the exported-approved algorithm. However, it is not an official source!! This rumour comes from the private suggests made by the NSA to the private companies. The suggests can include: leaking a key bit once in a while, use a fixed IV; or encrypt a fixed header; generate randomly few bytes, encrypt them and add the both at the beginning of the message.
+  * The NSA keeps a copy of the source-code of each export-approved algorithm. So, BEWARE of encryption algorithms from the U.S.
 
 ## [10.2 PUBLIC-KEY CRYPTOGRAPHY VERSUS SYMMETRIC CRYPTOGRAPHY](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec002)
-
+* Is is not possible to compare on an equal footing public-key cryptography and symmetric cryptography.
+* Needham and Schroeder, highlighted that public-key algorithms generate a larger number of longer messages compared to symmetric algorithms.
+  * As a result, they concluded that symmetric algorithms were more efficient than public-key algorithms.
+  * However, their analysis failed to consider the significant security advantages that come with public-key cryptography.
+* Whitfield Diffie says:
+  * Public-key cryptography was initially viewed as a new form of cryptosystem and faced criticism regarding its security and performance.
+  * RSA system was around 1/1000th as fast as DES and required ten times larger keys, leading to doubts about the feasibility of public-key cryptography.
+  * The idea of using public-key systems for exchanging keys for conventional (symmetric) cryptography was present from the beginning but wasn't initially recognized as necessary.
+  * Hybrid systems were proposed as a solution, which combined both public-key and symmetric cryptography, and were considered a significant breakthrough in the field.
+* Public-key cryptography and symmetric cryptography are different
+  * They solve different kind of problems.
+    * Symmetric cryptography: encrypting data
+    * Public-key cryptography: best for key management and a multitude of protocols
 
 ## [10.3 ENCRYPTING COMMUNICATIONS CHANNELS](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec003)
 
