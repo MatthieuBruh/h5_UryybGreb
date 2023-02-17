@@ -48,7 +48,33 @@
     * Public-key cryptography: best for key management and a multitude of protocols
 
 ## [10.3 ENCRYPTING COMMUNICATIONS CHANNELS](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec003)
-
+* Alice wants to send a secure message to Bob. To secure the message she encrypts it.
+* Theoretically, the encryption can be at any layer of the OSI model.
+* In practice, the encryption is at the two lowest layer level (*link-by-link encryption*) or at the highest layer level (*end-to-end encryption*).
+* **Link-by-link encryption**
+  * The physical layer is the easiest place to add the encryption.
+  * The interfaces of the physical layer are standardized, so it is easy to connect hard device encryption.
+  * All the data (message, protocols, routing, etc.) are encrypted when they go through the interface.
+    * Each time before processing, the whole data needs to be decrypted.
+  * Effective because everything is encrypted, no information can be taken without decrypting the message.
+  * Traffic-flow security is when the attacker is not able to access to the content of the message and the metadata of this latter.
+  * As regards the key management, only two endpoints need a common key.
+  * Synchronous communications line can be encrypted using 1-bit CFB, which can recover from errors automatically and encrypts only when messages are sent.
+  * Asynchronous communications line can also use 1-bit CFB, but the adversary can get information about the rate of transmission. Passing dummy messages during idle times can help conceal the information.
+  * Encryption at the physical layer requires encrypting each physical link in the network and protecting every node in the network, which can be costly and difficult to manage.
+  * Link-by-link encryption provides security but can be expensive and difficult to implement for large networks with multiple users and nodes. Table 10.2 summarizes the pros and cons of this type of encryption.
+* **End-to-End Encryption**
+  * Add encryption between the network layer and the transport layer.
+  * We only encrypt the transport data, and routing information is not encrypted. So, the **traffic analysis** is not "blocked".
+  * Avoid the encryption / decryption that is required with link-by-link encryption.
+  * However, we can learn a lot with the data that is not encrypted, like the sender and the receiver.
+  * Building an end-to-end encryption is difficult, because of the different communication protocols.
+  * If we encrypt a higher layer (application/presentation), the encryption is independent of the used communication network.
+  * Encryption can be directly embedded in the software or in specialized hardware.
+* **Combining the Two**
+  * Combining the two is more expensise, but it is the most effective way of securing a network.
+  * The encryption of the physical link makes the routing analysis impossible, and the end-to-end encryption reduce the risk of unencrypted data.
+  * The two key management systems can be completely isolated.
 
 ## [10.4 ENCRYPTING DATA FOR STORAGE](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec004)
 
