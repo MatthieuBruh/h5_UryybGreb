@@ -77,7 +77,26 @@
   * The two key management systems can be completely isolated.
 
 ## [10.4 ENCRYPTING DATA FOR STORAGE](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec004)
-
+* We can also use encryption to store data securely.
+* Applications that are used for data storage must have some mechanisms to avoid an unrecoverable data situation.
+* Cryptography converts long secret key as a smaller secret key, so it is also easier to lose it.
+* When storing encrypted data, the key management has to take in consideration that we will use the key several times.
+* A key used to store encrypted must assume that it will be stored securely for many years.
+* There are some problems related to encrypt data for storage, such as:
+  * I/O devices require fast encryption, so high-speed algorithms may be required. Hardware encryption can also be required.
+  * It is important to keep your keys in a safe place.
+  * Key management is more complicated, because multiple person will want to access to different parts of the storage and over the years.
+* It is easier to retrieve files that are not structured, such a text file.
+* Encrypting database files is problematic:
+  * Encrypting each row independently is more susceptible to a block-replay attack.
+  * It is inefficient to decrypt a whole database to access only one row.
+* It is important to be sure the unencrypted version of a file is completely deleted after the encryption.
+* **Dereferencing Keys**
+  * When you want to encrypt a hard drive, you can encrypt all the data using a single key, or you can encrypt each file with a different key.
+  * The single key method does not allow you to give access to a single part to a user.
+  * The second method requires the user to remember all the different keys.
+  * The best solution is to encrypt each file with a different key and then to encrypt this file with another key. So, you only need to remember one key.
+    * With this method, you can create subfiles that contains only the key related to a user.
 <br>
 
 ----
