@@ -25,11 +25,12 @@
 * One huge problem with algorithm is the fact that we do not know all the capabilities of each organization, such as the NSA.
   * Whatever you do for getting arrested, and you use an encrypted computer, any organization (such as the FBI) pretends that they succeeded to decrypt your computer (so, to break the algorithm). It is because their capabilities are more secret and important than your crime.
   * You need to be very performant to get the NSA admitted that they can break an algorithm.
-* It is good to admit that the NSA can read any message that it choose. However, it cannot read all the messages.
+* It is good to admit that the NSA can read any message that it chooses. However, it cannot read all the messages.
   * Even the biggest organizations have limited resources and various targets.
-* One of the best thing that we can do is to choose public algorithm that has resisted to enough public test and cryptanalysis.
-* 
-
+* One of the best things that we can do is to choose public algorithms that has resisted to enough public test and cryptanalysis.
+* All the algorithms that have to be exported outside the United States must be approved by the NSA.
+ * The NSA is able to break all the exported-approved algorithm. However, it is not an official source!! This rumour comes from the private suggests made by the NSA to the private companies. The suggests can include: leaking a key bit once in a while, use a fixed IV; or encrypt a fixed header; generate randomly few bytes, encrypt them and add the both at the beginning of the message.
+ * The NSA keeps a copy of the source-code of each export-approved algorithm. So, BEWARE of encryption algorithms from the U.S.
 
 ## [10.2 PUBLIC-KEY CRYPTOGRAPHY VERSUS SYMMETRIC CRYPTOGRAPHY](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec002)
 
