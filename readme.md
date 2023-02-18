@@ -277,3 +277,8 @@ Finally, Bobby can read the file by using the cat command:
 The secret message from Alice to Bob is:
 
 <p align="center"> <img alt="Final message" src="https://github.com/MatthieuBruh/h5_UryybGreb/blob/main/screenshots/decryptedMessage.PNG"> </p>
+
+## Sources
+* [Opengenus - Encryption and decryption with gpg](https://iq.opengenus.org/encryption-and-decryption-with-gpg/)
+* [Tutonics - GPG Encryption Guide - Part 1](https://tutonics.com/2012/11/gpg-encryption-guide-part-1.html)
+* [GNUPG - Encrypting and decrypting documents](https://www.gnupg.org/gph/en/manual/x110.html)
