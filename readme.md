@@ -196,5 +196,88 @@ As said before, NPM is also available as a mobile application. It is the same co
 ----
 <a name="message"></a>
 # 4. Message - Encrypt and Decrypt
+For this exercise, I will take the well-known example of Alice wanting to send a message to Bob. I only renamed Bob as Bobby.
+
+As long as you are working on a Linux distro (or others operating systems), it is important to regularly update your components. In my case, I try to do at least one time every two weeks and also before I install a new component. To update my components, I wrote the following commands:
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
+After that, I am now ready to install GPG with the following command:
+
+    $ sudo apt-get install gnupg
+    
+For the needs of the exercise, I created a directory named message, and I used it during the whole exercise.
+
+    $ mkdir message
+    $ cd message
+
+Firstly, I had to generate a key pair for Alice. To generate a key with gpg, I used the command:
+
+    $ gpg --gen-key
+    # GPG asked me three information:
+    #   - "Real name": Alice
+    #   - "Email": alice@haaga-helia.fi
+    #   - and a password
+
+Secondly, I also needed a key pair for Bob. So, I used the same command as for Alice but I changed the real name as Bobby, the email as bobby@haaga-helia.fi, and I created a new password.
+
+I can now see all the keys I created with the command:
+
+    $ gpg --list-keys
+
+Here is the result:
+
+<p align="center"> <img alt="My keys" src=""> </p>
+<p align="center"><i>As you can see, I have Alice and Bobby keys. Matthieu's key was test I did few days ago for myself.</i></p>
+
+Now, Bobby is able to export his public key in a file named: bobby_public_key.asc. By using the command:
+
+    $ gpg --armor --export Bobby > bobby_public_key.asc
+
+After exporting his key, Bobby can send it to Alice. Then, Alice will import Bobby's public key with the file given by Bobby and the command:
+
+    $ gpg --import bobby_public_key.asc
+
+In the case of my scenario, I didn't had to do this two previous steps. This is because I generated the key for Alice and Bobby, so Bobby's key is already "imported".
+
+Now, Alice can write her message for Bobby in a file named mesForBobby.txt. She used the command:
+
+    $ nano mesForBobby.txt
+    # She wrote a secret message in it!
+
+Before sending the file that contains the secret message, she needed to encrypt it with the command:
+
+    $ gpg --output mesForBobbyEnc.gpg --encrypt --recipient bobby@haaga-helia.fi mesForBobby.txt 
+    # --output: specify the name of the encrypted file.
+    # --recipient: specify with who's public key the message will be encrypted.
+    # mesForBobby.txt: the file that will be encrypted.
+
+She got the following result:
+
+<p align="center"> <img alt="Encrypted file" src=""> </p>
+<p align="center"><i>As you can see, the file is now encrypted and unreadable.</i></p>
+
+She is now able to send the file to Bobby. She sent it and Bobby received it.
+To read the file, Bobby has to decrypt the file. So, I will use his private key and the command:
+
+    $ gpg --output decryptedMessage --decrypt mesForBobbyEnc.gpg
+    # --output: specify the name of the file where the decrypted message will go.
+    # --decrypt: specify which file is going to be decrypted
+    # This command will require a password, it is the password of Bobby's private key.
+
+After the decryption we will have the following message:
+
+<p align="center"> <img alt="Decryption message" src=""> </p>
+
+Finally, Bobby can read the file by using the cat command:
+
+    $ cat decryptedMessage
+
+The secret message from Alice to Bob is:
+
+<p align="center"> <img alt="Final message" src=""> </p>
+
+
 
 
