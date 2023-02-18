@@ -126,6 +126,7 @@ It is also important to note that the Norton's privacy point that Norton may use
 
 ## How is the data protected?
 
+
 ## Sources
 * [PCMag UK - Norton Password Manager](https://uk.pcmag.com/password-managers/117939/symantec-norton-password-manager)
 * [Norton - Password Manager](https://us.norton.com/feature/password-manager)
