@@ -102,7 +102,36 @@
 ----
 <a name="passManEx"></a>
 # 2. Password Manager - Explain
+As a password manager, I choose the [Norton Password Manager](https://us.norton.com/). It is a cloud-based password manager that enable us to create, store and manage our passwords. It is also able to manage wallets, addresses and other notes.
 
+## What treaths does it protect against?
+The Norton Password Manager (NPM) offers several features against different kind of attacks.
+* With NPM, you can create **stong**, **unique** passwords for each of your accounts. This avoids having your accounts stolen because of **weak passwords**.
+* It provides a feature that fills automatically your login credentials on **verifired** and **authentic** website. It prevent the fact that you provide your credentials to a **phishing** website.
+* Automatic filling of your credentials also avoids **keylogging** situation. In fact, you don't need to rewrite your password or to copy-paste it. It is automatically managed by NPM.
+* To transmit login credentials, NPM by using secure connection and by verifying the website before auto-filling. This makes it possible to avoid **man-in-the-middle attacks**.
+* NPM can prevent users when his/her data is detected in **data breach**. So, the user is prompted to change the concerned password(s).
+* NPM is also able to scan your passwords to ensure that they are unique. It avoids **credentials stuffing**.
+
+## What information is encrypted, what's not?
+According to Norton's website, all sensitive data is encrypted with AES-256. Sensitive data includes: login credentials, personal information, and payment details. In other words, Norton says that all the data stored in NPM is encrypted.
+
+## What's the license? How would you describe license's effects or categorize it?
+
+
+## Where is the data stored? If in "the cloud", which country / juristiction / which companies? If on local disk, where?
+Norton Password manager is a cloud-based password manager. Norton saves data all around the world (United States, Canada, and the European Union) using the servers of NortonLifeLock Inc.
+Norton Privacy policy says that Norton is committed to responding to General Data Protection Regulation (GDPR) in the European Union.
+It is also important to note that the Norton's privacy point that Norton may use third-party service to assist in providing the Norton Password Manager service. These providers can be located in several countries.
+
+## How is the data protected?
+
+## Sources
+* [PCMag UK - Norton Password Manager](https://uk.pcmag.com/password-managers/117939/symantec-norton-password-manager)
+* [Norton - Password Manager](https://us.norton.com/feature/password-manager)
+* [Norton - Password management: Keep your passwords safer and private online](https://uk.norton.com/blog/privacy/password-management-how-to-secure-your-password)
+* [Forbes - Norton Password Manager Review 2023](https://www.forbes.com/advisor/business/software/norton-password-manager-review/#:~:text=Is%20Norton%20Password%20Manager%20secure,been%20operating%20for%20several%20years.)
+* [Norton - Privacy Center](https://www.nortonlifelock.com/us/en/privacy/)
 
 <br>
 
