@@ -12,6 +12,16 @@
 ----
 <a name="schneider"></a>
 # 1. Schneier 2015: Applied Cryptography
+## [10. Using Algorithms](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10)
+* You can have a very secure system, if you have a component that is less secure, it determinate you security level.
+* You have to secure everything in a system (protocols, encryption keys, etc.)
+* In cybersecurity, you have to think of everything. One omission and it can be a flaw.
+* The security designer has to think of everything. However, the attacker can only think to one flaw.
+* In cybersecurity, there is not only the encryption.
+* The aim is to make the crime more difficult.
+* Successful attacks against cryptography is generally due to another thing than a bad cryptography algorithm.
+* Most of security failures are related to a bad or wrong implementation.
+
 ## [10.1 CHOOSING AN ALGORITHM](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html#chap10-sec001)
 * To choose an algorithm, you have several alternatives:
   * Choose a published algorithm that has not been broken, and hoping that a published algorithm is strong enough.
