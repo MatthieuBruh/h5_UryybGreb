@@ -147,7 +147,48 @@ It is also important to note that the Norton's privacy point that Norton may use
 ----
 <a name="passManDem"></a>
 # 3. Password Manager - Demonstrate
+To start using [Norton Password Manager](https://my.norton.com/extspa/passwordmanager?inid=nortoncom-overview_card22_mynorton), you have to create an account. At the same time, you can install the chrome web extensions and the mobile application.
+To summarize the step to get started with NPM, you have to: 
+1. Install the chrome extension.
+2. Create a Norton account from the NPM extension.
+3. Create a vault, it will be your password manager.
+4. Create a strong and unique password that you can easily remember for your vault.
+5. Recommended: Add two-factor authentication with the mobile application.
+If you need help to create your account, you use the [Norton support](https://support.norton.com/sp/en/us/home/current/solutions/v54500320#:~:text=Click%20Norton%20Password%20Manager%20on,details%2C%20and%20click%20Create%20Account.).
 
+After having created and set up your vault, you can start to use NPM.
+Firstly, you have to open the Norton Password Manager extension on your browser. <br>
+Secondly, you can use the yellow plus button to add a new login credentials. <br>
+
+<p align="center"> <img alt="Create a new login" src="https://github.com/MatthieuBruh/h4_Hash/blob/main/screenshots/catSolved.PNG"> </p>
+
+<p align="center"><i>During the whole demonstration my Norton Password Manager is in French. I can't change the default language, so I will translate for you. At the same time, you can learn French if you want! :smile:</i></p>
+
+
+As you can see, you can enter a title under the field "civilité".
+You can add an URL, so that NPM will be able to do automatic filling.
+You can also use the notes field to enter other information.
+Then, you can enter the username (field: "nom d'utilisateur") and the password (field: "mot de passe"). You can use the right button of the password field to generate a password as below.
+
+<p align="center"> <img alt="Generate password" src="https://github.com/MatthieuBruh/h4_Hash/blob/main/screenshots/catSolved.PNG"> </p>
+
+When you want to generate a password, you can choose the length ("Longueur du mot de passe"), you can choose to have letters ("Lettres"), upper and lower case ("Casse mixte"), numbers ("Chiffres"), punctuation ("Ponctuation").<br>
+Depending of your choice, the password reliability can change. It corresponds to the field: "Fiabilité".<br>
+To use the generate password, you can click again on the yellow button ("Utiliser le mot de passe").
+
+After having saved your credentials on the Norton Password Manager, you can go to the site you want to connect to. Let's take a random Haaga-Helia service that require authentication. On the authentication page of Haaga-Helia, I will automatically have the Norton Password Manager field. I only need to click on the popup to enter my credentials.
+
+<p align="center"> <img alt="Haaga-Helia example" src="https://github.com/MatthieuBruh/h4_Hash/blob/main/screenshots/catSolved.PNG"> </p>
+
+
+Another interesting feature of the Norton Password Manager is the dashboard. You can easily see if your passwords are strong enough, unique, or if you have to change it because it has not been changed for a while. From this dashboard, it is also possible to change "automatically" your password. It means that NPM try to change the password on your password manager and on the website concerned. However, I don't recommend you to use it for the moment, because it does not really work properly.
+
+<p align="center"> <img alt="Norton dashboard" src="https://github.com/MatthieuBruh/h4_Hash/blob/main/screenshots/catSolved.PNG"> </p>
+
+As said before, NPM is also available on mobile. It is the same concept as on your computer.
+
+## Sources
+* [Support Norton - Create Norton Password Manager cloud vault](https://support.norton.com/sp/en/us/home/current/solutions/v54500320#:~:text=Click%20Norton%20Password%20Manager%20on,details%2C%20and%20click%20Create%20Account.)
 
 <br>
 
