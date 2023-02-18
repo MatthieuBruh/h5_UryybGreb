@@ -125,7 +125,12 @@ Norton Privacy policy says that Norton is committed to responding to General Dat
 It is also important to note that the Norton's privacy point that Norton may use third-party service to assist in providing the Norton Password Manager service. These providers can be located in several countries.
 
 ## How is the data protected?
-
+* As said before, NPM uses 256-bit AES encryption.
+  * It is the same encryption that is used in financial instituations, such as banks.
+* The NPM encryption ensure that data are secured in transit and at rest.
+* NPM provides Two-Factor Authentication to add an additional security layer to protect user accounts.
+* NPM also provides Advanced Access Controls, which prevent unauthorized access to user data, the use of strong password, and IP address restrictions.
+* Norton also monitors system for any suspicious activity.
 
 ## Sources
 * [PCMag UK - Norton Password Manager](https://uk.pcmag.com/password-managers/117939/symantec-norton-password-manager)
