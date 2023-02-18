@@ -117,7 +117,9 @@ The Norton Password Manager (NPM) offers several features against different kind
 According to Norton's website, all sensitive data is encrypted with AES-256. Sensitive data includes: login credentials, personal information, and payment details. In other words, Norton says that all the data stored in NPM is encrypted.
 
 ## What's the license? How would you describe license's effects or categorize it?
-
+NPM is licensed as a shareware. It means that it is a proprietary software that is shared by the owner for small or no cost. Usually, a shareware has limited functionalities or an incomplete documentation as long as you don't pay for it.
+In the case of NPM, you can use it for free and have an unlimited number of passwords and devices.
+However, the shareware license does not offer the benefits of an open-source software. Indeed, the source code is not accessible, and therefore cannot be corrected or improved by the community. Unlike open-source password management, the software is not transparent and we can only believe in what Norton says.
 
 ## Where is the data stored? If in "the cloud", which country / juristiction / which companies? If on local disk, where?
 Norton Password manager is a cloud-based password manager. Norton saves data all around the world (United States, Canada, and the European Union) using the servers of NortonLifeLock Inc.
@@ -126,10 +128,10 @@ It is also important to note that the Norton's privacy point that Norton may use
 
 ## How is the data protected?
 * As said before, NPM uses 256-bit AES encryption.
-  * It is the same encryption that is used in financial instituations, such as banks.
-* The NPM encryption ensure that data are secured in transit and at rest.
+  * It is the same encryption that is used in financial institutions, such as banks.
+* The NPM encryption ensures that data is secured in transit and at rest.
 * NPM provides Two-Factor Authentication to add an additional security layer to protect user accounts.
-* NPM also provides Advanced Access Controls, which prevent unauthorized access to user data, the use of strong password, and IP address restrictions.
+* NPM also provides Advanced Access Controls, which prevent unauthorized access to user data, the use of strong passwords, and IP address restrictions.
 * Norton also monitors system for any suspicious activity.
 
 ## Sources
@@ -138,6 +140,7 @@ It is also important to note that the Norton's privacy point that Norton may use
 * [Norton - Password management: Keep your passwords safer and private online](https://uk.norton.com/blog/privacy/password-management-how-to-secure-your-password)
 * [Forbes - Norton Password Manager Review 2023](https://www.forbes.com/advisor/business/software/norton-password-manager-review/#:~:text=Is%20Norton%20Password%20Manager%20secure,been%20operating%20for%20several%20years.)
 * [Norton - Privacy Center](https://www.nortonlifelock.com/us/en/privacy/)
+* [Wikipedia - Norton Password Manager](https://en.wikipedia.org/wiki/Norton_Internet_Security)
 
 <br>
 
