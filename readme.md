@@ -262,7 +262,7 @@ She is now able to send the file to Bobby. She sent it and Bobby received it.
 To read the file, Bobby has to decrypt the file. So, I will use his private key and the command:
 
     $ gpg --output decryptedMessage --decrypt mesForBobbyEnc.gpg
-    # --output: specify the name of the file where the decrypted message will go.
+    # --output: specify the name of the file where the decrypted message will be saved.
     # --decrypt: specify which file is going to be decrypted
     # This command will require a password, it is the password of Bobby's private key.
 
